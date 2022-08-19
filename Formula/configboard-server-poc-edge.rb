@@ -5,20 +5,20 @@
 class ConfigboardServerPocEdge < Formula
   desc "configboard-server-poc"
   homepage "https://github.com/configboard/configboard-server-poc"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.1.0/configboard-server-poc_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "99e053230af088d4b5647139eadfde369dc23ff160a3170c6ac58221efdc82f4"
+      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.2.0/configboard-server-poc_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "773fd2ed473b4dd76960190ea788e824b725e60a7e063e03d384d1e40056cd54"
 
       def install
         bin.install "configboard-server-poc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.1.0/configboard-server-poc_v0.1.0_darwin_amd64.tar.gz"
-      sha256 "76b0dd4af08390e52e06b919c5dac85a2fa82b57b7f67d606a7399c7fa3e921e"
+      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.2.0/configboard-server-poc_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "243633fd5b3f9f8e4b13a65e6c4866f06bb53724add0ee9693cc227985af9de5"
 
       def install
         bin.install "configboard-server-poc"
@@ -28,16 +28,16 @@ class ConfigboardServerPocEdge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.1.0/configboard-server-poc_v0.1.0_linux_arm64.tar.gz"
-      sha256 "a27bf01242ae7a8efdf7218abb5f7df9279e5d5223ab108e0ee135960260d23e"
+      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.2.0/configboard-server-poc_v0.2.0_linux_arm64.tar.gz"
+      sha256 "18619e3e5a62a4b7ed1563a52c95b648bfbf0287b9d480dea29ed960182c20e4"
 
       def install
         bin.install "configboard-server-poc"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.1.0/configboard-server-poc_v0.1.0_linux_amd64.tar.gz"
-      sha256 "cf721e079788485fd3c478d46acc01c57bcb576837d24663e3af74054b934fda"
+      url "https://github.com/configboard/configboard-server-poc/releases/download/v0.2.0/configboard-server-poc_v0.2.0_linux_amd64.tar.gz"
+      sha256 "6af8957a01fdbae8bac2b9c23687f30961521a76f6a057989d5370f92c37b8ee"
 
       def install
         bin.install "configboard-server-poc"
