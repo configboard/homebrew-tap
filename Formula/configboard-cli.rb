@@ -5,20 +5,20 @@
 class ConfigboardCli < Formula
   desc "configboard-cli"
   homepage "https://github.com/configboard/configboard-cli"
-  version "0.3.2"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/configboard/configboard-cli/releases/download/v0.3.2/configboard-cli_v0.3.2_darwin_arm64.tar.gz"
-      sha256 "fda8e06fbe1d544f42adf8a1f88d1a229f4efabc09cebb6e5257770cb36f6050"
+      url "https://github.com/configboard/configboard-cli/releases/download/v0.4.0/configboard-cli_v0.4.0_darwin_arm64.tar.gz"
+      sha256 "96cd4ea3508a771cf73187f9bdc8ac370ff3888571d241615afda566f81aaa39"
 
       def install
         bin.install "configboard-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/configboard/configboard-cli/releases/download/v0.3.2/configboard-cli_v0.3.2_darwin_amd64.tar.gz"
-      sha256 "e883ec1aa97ea4a37a1ed572e9d12678965d8ae55cadb2ce796ba8a6a333d694"
+      url "https://github.com/configboard/configboard-cli/releases/download/v0.4.0/configboard-cli_v0.4.0_darwin_amd64.tar.gz"
+      sha256 "4ca28a8db00756ca070d326edd4ff31459723e178d47ef1fed8a18560fbf57e4"
 
       def install
         bin.install "configboard-cli"
@@ -28,16 +28,16 @@ class ConfigboardCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/configboard/configboard-cli/releases/download/v0.3.2/configboard-cli_v0.3.2_linux_arm64.tar.gz"
-      sha256 "e9d0c6d95cb709477f9db9287f0f54278a27d7fca684cfb6e7eb8a9bad889f0d"
+      url "https://github.com/configboard/configboard-cli/releases/download/v0.4.0/configboard-cli_v0.4.0_linux_arm64.tar.gz"
+      sha256 "3393559293bfb3207341779991a5a6d529bc71634bc4ecdd4d8bb0fa008dbe3d"
 
       def install
         bin.install "configboard-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/configboard/configboard-cli/releases/download/v0.3.2/configboard-cli_v0.3.2_linux_amd64.tar.gz"
-      sha256 "d92864d64039b57d4650abb5205f79ed42be78c1f8be7f86ae05ba78c554c733"
+      url "https://github.com/configboard/configboard-cli/releases/download/v0.4.0/configboard-cli_v0.4.0_linux_amd64.tar.gz"
+      sha256 "64271bde82c38f94b59708c8d36f7aec53dc45f82429f0d08b2b17efcdb981e7"
 
       def install
         bin.install "configboard-cli"
